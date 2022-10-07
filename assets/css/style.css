@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(5, 40, 71, 0.712);
+    margin: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.card {
+    background-color: aliceblue;
+    
+}
+
+.header .home {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(3, 30, 54, 0.774);
+    font-size: 45px;
+}

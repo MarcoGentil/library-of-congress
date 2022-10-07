@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,47 +11,43 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Library of Congress Search Tool</title>
-  </head>
-  <body class="bg-blue">
+</head>
+
+<body>
     <!-- Header -->
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-lightblue">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="./index.html">Home</a>
+    <main class="card">
+        <div class="header d-flex justify-content-center mt-3">
+            <h1 class="home text-allign fw-bold">Library of Congress Search Engine</h1>
         </div>
-      </nav>
-    </div>
-    <!-- Search area -->
-    <section class="container-sm my-5 bg-darkblue rounded p-2">
-      <div class="input-group mb-3">
-        <span
-          class="input-group-text bg-secondary"
-          id="inputGroup-sizing-default"
-          >Search</span
-        >
-        <input type="text" class="form-control" id="searchInput" />
-      </div>
-      <select class="form-select bg-secondary text-light" id="searchOptions">
-        <!-- <option selected>Search Options</option> -->
-        <option value="maps">Maps</option>
-        <option value="audio">Audio</option>
-        <option value="photos">Photos</option>
-        <option value="manuscripts">Manuscripts</option>
-        <option value="newspapers">Newspapers</option>
-        <option value="film-and-videos">Videos</option>
-        <option value="notated-music">Music</option>
-        <option value="websites">Websites</option>
-      </select>
-      <div class="d-grid gap-2 my-2">
-        <button class="btn btn-primary" id="searchBtn" onclick="searchOption()">
-          Search
-        </button>
-      </div>
-    </section>
+        </div>
+        <!-- Search area -->
+        <section class="container-sm my-2 bg-darkblue rounded p-2">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search items"/>
+        </div>
+        <select class="form-select" id="searchOptions">
+            <option value="" disabled selected>Select your option</option>
+            <option value="maps">Maps</option>
+            <option value="audio">Audio</option>
+            <option value="photos">Photos</option>
+            <option value="manuscripts">Manuscripts</option>
+            <option value="newspapers">Newspapers</option>
+            <option value="film-and-videos">Videos</option>
+            <option value="notated-music">Music</option>
+            <option value="websites">Websites</option>
+        </select>
+        <div class="d-grid gap-2 my-2">
+            <button class="btn text-bg-success" id="searchBtn" onclick="searchOption()">
+            Search
+            </button>
+        </div>
+        </section>
+    </main>
     <script>
       src =
         "	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js";
     </script>
     <script src="./assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
