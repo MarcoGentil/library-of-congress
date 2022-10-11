@@ -9,18 +9,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Library of Congress Search Tool</title>
+    <link rel="stylesheet" href="./assets/css/search.css" />
+    <title>Library of Congress Search</title>
 </head>
 
-<body>
-    <!-- Header -->
-    <main class="card ">
-        <div class="header d-flex justify-content-center mt-3">
-            <h1 class="home text-allign fw-bold">Library of Congress Search Engine</h1>
-        </div>
-        <!-- Search area -->
-        <form id="user-form" class="container-sm d-grid gap-2 my-2 bg-darkblue rounded">
+<body class="d-flex flex-column">
+    <header class="w-100 mb-2">
+      <h1 class="home fw-bold mt-5">Library of Congress</h1>
+    </header>
+    <main class="row">
+        <div class="col-4">
+            <form id="user-form" class="bg-darkblue rounded">
             <input id="itemSearch" type="text" class="form-control" placeholder="Search by item"/>
             <input id="collectionSearch" type="text" class="form-control" placeholder="Search by collection"/>
             <select class="form-select" id="searchOptions">
@@ -36,9 +35,15 @@
                 <option value="websites">Websites</option>
             </select>
             <button class="btn text-bg-success" id="searchBtn">Search</button>
-        </form>
+            </form>
+        </div>
+        <div class="results col-8 rounded">
+            <h2>Search results:</h2>
+        </div>
+        <div id="search-container" class="list-group"></div>
+        <div id="limit-warning"></div>
     </main>
-    <script>src ="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js";</script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/search.js"></script>
 </body>
+
 </html>
