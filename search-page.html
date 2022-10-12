@@ -14,33 +14,34 @@
 </head>
 
 <body class="d-flex flex-column">
-    <header class="w-100 mb-2">
-      <h1 class="home fw-bold mt-5">Library of Congress</h1>
+    <header class="row mb-1">
+      <h1 class="home fw-bold mt-5 col">Library of Congress</h1>
     </header>
     <main class="row">
-        <div class="col-4">
+        <div class="col-3 rounded">
             <form id="user-form" class="bg-darkblue rounded">
-            <input id="itemSearch" type="text" class="form-control" placeholder="Search by item"/>
-            <input id="collectionSearch" type="text" class="form-control" placeholder="Search by collection"/>
-            <select class="form-select" id="searchOptions">
-                <option value="" disabled selected>Select your option</option>
-                <option value="maps">All</option>
-                <option value="maps">Maps</option>
-                <option value="audio">Audio</option>
-                <option value="photos">Photos</option>
-                <option value="manuscripts">Manuscripts</option>
-                <option value="newspapers">Newspapers</option>
-                <option value="film-and-videos">Videos</option>
-                <option value="notated-music">Music</option>
-                <option value="websites">Websites</option>
-            </select>
-            <button class="btn text-bg-success" id="searchBtn">Search</button>
+                <input id="itemSearch" type="text" class="form-control" placeholder="Search by item"/>
+                <input id="collectionSearch" type="text" class="form-control" placeholder="Search by collection"/>
+                <select class="form-select" id="searchOptions">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="maps">All</option>
+                    <option value="maps">Maps</option>
+                    <option value="audio">Audio</option>
+                    <option value="photos">Photos</option>
+                    <option value="manuscripts">Manuscripts</option>
+                    <option value="newspapers">Newspapers</option>
+                    <option value="film-and-videos">Videos</option>
+                    <option value="notated-music">Music</option>
+                    <option value="websites">Websites</option>
+                </select>
+                <button class="btn text-bg-success" id="searchBtn">Search</button>
             </form>
         </div>
-        <div class="results col-8 rounded">
+        <div class="results col-8 rounded" id="search-container">
             <h2>Search results:</h2>
+            <div class="list-group" id="list">
+            </div>
         </div>
-        <div id="search-container" class="list-group"></div>
         <div id="limit-warning"></div>
     </main>
     <script src="./assets/js/search.js"></script>

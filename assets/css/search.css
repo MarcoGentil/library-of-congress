@@ -1,31 +1,39 @@
+:root {
+    --textStyle: 'Times New Roman', Times, serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: rgba(5, 40, 71, 0.712);
+    background-image: url(./background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
     background-color: aliceblue;
+    font-family: var(--textStyle);
 }
 
 header .home {
     color: rgba(3, 30, 54, 0.774);
     font-size: 55px;
-    font-family: 'Times New Roman', Times, serif;
-
 }
 
 #user-form {
     background-color: aliceblue;
+    font-family: var(--textStyle);
 }
 
 .results {
     background-color: aliceblue;
+    font-family: var(--textStyle);
 }
 
 .results h2 {
     color: rgba(3, 30, 54, 0.774);
-    font-family: 'Times New Roman', Times, serif;
 }
